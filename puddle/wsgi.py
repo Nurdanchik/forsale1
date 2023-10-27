@@ -15,4 +15,17 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'puddle.settings')
 
 application = get_wsgi_application()
 
-app = application
+# app = application
+# {
+#     "builds": [{
+#         "src": "puddle/wsgi.py",
+#         "use": "@vercel/python",
+#         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+#     }],
+#     "routes": [
+#         {
+#             "src": "/(.*)",
+#             "dest": "puddle/wsgi.py"
+#         }
+#     ]
+# }
